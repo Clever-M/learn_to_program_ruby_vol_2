@@ -18,6 +18,10 @@ pic_names.each do |name|
         "#{batch_name}#{pic_number}.jpg"
     end
 
+    if File.exist? new_name
+        exit
+    end
+
     File.rename(name, new_name)
     pic_number += 1
 end
