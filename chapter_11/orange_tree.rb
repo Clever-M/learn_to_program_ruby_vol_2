@@ -2,8 +2,8 @@ class OrangeTree
   attr_reader :height, :oranges
 
   def initialize
-    @age = 0
-    @height = 0
+    @age     = 0
+    @height  = 0
     @oranges = 0
   end
 
